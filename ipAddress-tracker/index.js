@@ -12,7 +12,6 @@ input.addEventListener("keyup",(e)=>{
 
 });
 
- 
  async function getData(text){
     await fetch(api+text).then((res)=>res.json()).then((data)=>{
         let output = `
@@ -23,8 +22,6 @@ input.addEventListener("keyup",(e)=>{
         `;
         showInformation.innerHTML = output;
     })
-    
-
  };
 
 
